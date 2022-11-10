@@ -16,7 +16,7 @@
     https://www.gog.com/game/higurashi_when_they_cry_hou_ch3_tatarigoroshi  
     https://www.mangagamer.com/detail.php?goods_type=1&product_code=176  
 2)
-    Установите патч 07th-Mod English Watanagashi через установщик 07th-Mod:  
+    Установите патч 07th-Mod English Tatarigoroshi через установщик 07th-Mod:  
     https://github.com/07th-mod/python-patcher/releases/latest  
 3)
     Загрузите последнюю версию перевода.  
