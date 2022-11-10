@@ -1,0 +1,102 @@
+﻿void main()
+{
+}
+
+void dialog000()
+{
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei30360", 256, TRUE);
+	OutputLine(NULL, "きっと成長途上な魅音を飛び越して、ナイスバデーになって、グラビアを独り占めだ！！」",
+		   NULL, " То ли дело Мион, она не заботится о здоровье; вот у тебя фигурка выйдет — загляденье, в каждом мужском журнале красоваться будешь!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Шион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600353", 256, TRUE);
+	OutputLine(NULL, "「まずですね、私のことをご主人様と呼ばせて、優しく可憐なメイドにします。」",
+		   NULL, "\"Для начала заставил бы её называть меня Хозяином и сделал бы из неё милую добросердечную горничную.\"", Line_Continue);
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Шион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600354", 256, TRUE);
+	OutputLine(NULL, "「そうそう。",
+		   NULL,"\"А, верно...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600355", 256, TRUE);
+	OutputLine(NULL, "沙都子を自分専属の「ぷりちー」なメイドにするってはっきり言いました。」",
+		   NULL, " Он совершенно точно сказал, что сделает Сатоко своей милой служанкой.\"", Line_Normal);
+	ClearMessage();
+//＜詩音
+	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
+	ModDrawCharacter(1, 10, "sprite/iri1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「あ～～、それはいいですねぇ...＠沙都子ちゃんを...木馬責め...♪＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Ириэ</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s19/10/501000117", 256, TRUE);
+	OutputLine(NULL, "「あ〜〜、それはいいですねぇ…。",
+		   NULL,"\"Аааах, замечательная идея...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s19/10/501000118", 256, TRUE);
+	OutputLine(NULL, "沙都子ちゃんを…「ぷりちー」…♪」",
+		   NULL, " Сатоко-тян... миленькая служаночка..♪\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 6, "sprite/si1b_wink_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Шион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600356", 256, TRUE);
+	OutputLine(NULL, "「あ、「プリティ」と「ぷりちー」は似てるようで微妙に違いますからね。",
+		   NULL, "\"Ох, а ведь «миленький» и «непорочность» действительно трудно различить?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600357", 256, TRUE);
+	OutputLine(NULL, "日本のわび寂をミックスした和洋折衷の言葉なので、注意してください。」",
+		   NULL, " Будьте осторожны вот так смешивая английские да японские слова.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейти</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei30960", 256, TRUE);
+	OutputLine(NULL, "「なるほどな。",
+		   NULL,"\"Понятное дело.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei30970", 256, TRUE);
+	OutputLine(NULL, "いや〜、日本語はほんと奥が深いよなぁ〜。」",
+		   NULL, " Я согласен с тем, что тонкости языка не имеют границ.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog003()
+{
+//「だから沙都子を信じちゃいけないって警告したんですよー。＠
+//　富田くんと岡村くんが、言わんこっちゃないと口を揃える＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Томита</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 24, "ps3/s19/24/502400052", 256, TRUE);
+	OutputLine(NULL, "「だから北条を信じちゃいけないって警告したんですよー。」",
+		   NULL, "\"Говорили же, нечего Ходзё верить!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog004()
+{
+//自分が調教されているメイドであると想像するんです＠/
+	ModPlayVoiceLS(4, 10, "ps3/s19/10/501000132", 256, TRUE);
+	OutputLine(NULL, "厳しい「指導」を受けているメイドであると想像するんです。",
+		   NULL, " попросту представьте себя служаночкой, получающей своё строгое наказание", Line_WaitForInput);
+
+	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 10, "sprite/iri1_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	ModPlayVoiceLS(4, 10, "ps3/s19/10/501000133", 256, TRUE);
+	OutputLine(NULL, "……ほら、絶望的なシチュエーションが、何だか楽しそうになってきませんか…☆",
+		   NULL, " ...Видите?..... Не кажется ли вам безнадёжная ситуация чем-то весёлым...?☆", Line_WaitForInput);
+}
+
+void dialog005()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　俺推理では多分、「指導」と打つと変換されると見た…。",
+		   NULL, "Первое что приходит в голову при слове «наказание» это уж точно не «служанки»...", Line_Normal);
+	ClearMessage();
+}
